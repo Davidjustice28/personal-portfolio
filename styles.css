@@ -1,0 +1,179 @@
+* {
+    background-color: black;
+}
+
+#nav {
+    display: flex;
+    color: white;
+    height: 10vh;
+}
+
+#menu {
+    opacity: 0;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style-type: none;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    transform: translateY(-25px);
+    animation-name: menu-animation;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#about-button, #projects-button {
+    cursor:  pointer;
+}
+
+#logo {
+    margin-right: auto;
+    position: relative;
+    left:25px;
+    top:10px;
+    padding: 3px;
+    animation-name: logo-load;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    transform: scale(1.5);
+}
+
+@keyframes logo-load {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+        transform: scale(2)
+    }
+}
+
+@keyframes menu-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+        transform: translateY(25px);
+    }
+}
+
+li {
+    font-weight: bold;
+}
+
+#menu li:hover {
+    transform: scale(1.5) translateY(-5px)
+
+}
+
+#name-display {
+    height:90vh;
+    position: sticky;
+    top: 0;
+}
+
+
+.wrapper {
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+    color: white;
+}
+  
+.typing-demo {
+    width: 24ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 4em;
+}
+  
+@keyframes typing {
+    from {
+      width: 0
+    }
+}
+      
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+#about-subdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#about-subdiv p {
+    font-size: large;
+    width: 70%;
+    border: 2px solid black;
+    text-align: left;
+    padding: 15px;
+}
+
+#about-section {
+    height: 100vh;
+    position:sticky;
+    top: 0;
+}
+
+#about-section p, #about-section h3, h2 {
+    color:black;
+    background-color: white;
+}
+
+h2 {
+    transform: translateY(-30px);
+    font-size: 1px;
+    opacity: 0;
+    transition-delay: .5s;
+    transition-duration: 2s;
+}
+
+#skill-list {
+    border: 2px solid black;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+#skill-list li {
+    background-color: white;
+}
+
+#project-section {
+    height: 100vh;
+    position: sticky;
+    top: 200px;
+}
+
+#cards-div1 {
+    display: flex;
+    gap: 25px;
+}
+
+h4 {
+    text-align: center;
+    color:white;
+    font-size: 3em;
+}
+
+.card {
+    transform: translateY(100px);
+    opacity: 0;
+    transition-duration: 2s;
+}
