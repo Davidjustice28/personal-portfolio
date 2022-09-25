@@ -177,3 +177,8 @@ h4 {
     opacity: 0;
     transition-duration: 2s;
 }
+
+
+#card1 a:hover, #card2 a:hover, #card3 a:hover, #card4 a:hover {
+    background-color: gray;
+}
