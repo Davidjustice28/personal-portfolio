@@ -12,7 +12,7 @@
     }
 
     #about-section {
-
+        width:100vw;
     }
 
     #about-section p {
@@ -41,6 +41,7 @@
         justify-content: center;
         align-items: flex-start;
         top: 240vh;
+        width: 100vw;
 
     }
 
