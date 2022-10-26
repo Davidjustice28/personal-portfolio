@@ -1,12 +1,17 @@
 @media (max-width:500px) {
-    #logo {
-        display: none;
-    }
 
     .typing-demo {
         font-size: 1.5em;
+        height: 70vh;
+        flex-direction: column;
     }
 
+    #welcome p {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: .9em;
+    }
     h2 {
       background-color: transparent;
     }
